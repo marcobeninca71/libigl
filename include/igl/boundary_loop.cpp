@@ -30,7 +30,7 @@ IGL_INLINE void igl::boundary_loop(
   vertex_triangle_adjacency(Vdummy,F,VF,VFi);
 
   vector<bool> unvisited = is_border_vertex(F);
-  set<int> unseen;
+  std::set<int> unseen;
   for (size_t i = 0; i < unvisited.size(); ++i)
   {
     if (unvisited[i])
